@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>account</title>
+    <meta name="description" content="spacex microsite" />
+    <meta
+      name="keywords"
+      content="spacex, Elon_Musk, nasa, starship, falcon1, falcon9, crew-dragon. dragon-cargo, iss,launch-pad, moon, space-craft, space,propellant,merelin,
+     vaccum,liquide hydrogen, trust,velocity, reentry, atmosphere,rocket, contact-us, log-in, social-media, spacex, form,email-spacex, question-spacex, send-email-spacex"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,300;0,400;1,300&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&family=Source+Sans+Pro:ital,wght@0,300;0,400;1,300&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="path/to/font-awesome/css/font-awesome.min.css"
+    />
+    <script
+      defer
+      src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"
+    ></script>
+    <link type="text/css" rel="stylesheet" href="css/lightslider.css" />
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body class="formBody" id="formBody">
+    <header>
+      <div class="container">
+        <div class="navigation">
+          <a href="index.html">
+            <div class="logo-container logo-color">
+              <img src="images/SpaceX-Logo.svg" alt="" />
+            </div>
+          </a>
+          <div class="hamburger-menu">
+            <i class="fas fa-bars"></i>
+            <i class="fas fa-times"></i>
+          </div>
+
+          <nav>
+            <ul class="nav-list">
+              <li class="nav-links">
+                <a href="index.html" class="active">Home</a>
+              </li>
+              <li class="nav-links"><a href="">launches</a></li>
+              <li class="nav-links"><a href="">missions</a></li>
+              <li class="nav-links"><a href="">rockets</a></li>
+              <li class="nav-links account .account-shadow">
+                <a href="account.html" class="account-btn account-shadow"
+                  >Account</a
+                >
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <main role ="main-account-content">
+    <!--   <div class="form-wrapper"> -->
+    <!--     log in existent account -->
+    <div class="forms">
+      <div class="form-wrapper" id="loginForm">
+        <div class="login-container">
+          <div class="form-container left">
+            <!--  login existent user -->
+            <div class="form-header">
+              <h2>login</h2>
+            </div>
+            <form id="formLogin" class="form">
+              <div class="form-control existent">
+                <label for="email">Email</label>
+                <input
+                  type="text"
+                  id="emailExistent"
+                  placeholder="Enter Your Email"
+                  required
+                />
+                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-exclamation-circle"></i>
+                <small>Error message</small>
+              </div>
+              <div class="form-control existent">
+                <label for="password">Password</label>
+                <input
+                  type="password"
+                  id="passwordExistent"
+                  placeholder="Enter Your Password"
+                />
+                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-exclamation-circle"></i>
+                <small>Error message</small>
+              </div>
+              <div class="form-control btn-group">
+                <button class="submitOld">Login</button>
+                <a href="#" id="linkPasswordRecovery">
+                  <p>forgot your password ?</p>
+                </a>
+              </div>
+            </form>
+          </div>
+          <!-------------------   dont gave an account? create an account -->
+          <div class="form-container right">
+            <div class="form-header">
+              <h2>Don´t have an account ?</h2>
+            </div>
+            <div class="form-text">
+              <p>
+                creating your account enables you to be a part of our community,
+                and get exclusive info
+              </p>
+              <button id="linkCreateAccount">create account</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!----------------------     password recovery form   -->
+      <div class="form-container hidden-recovery" id="pw-recovery">
+        <div class="form-header">
+          <h2>password recovery</h2>
+        </div>
+        <div class="form-control form-text">
+          <p>enter your spacex community account email adress</p>
+          <label for="email">Email</label>
+          <input id="emailRevocery" type="email" placeholder="Enter email" />
+          <i class="fas fa-check-circle"></i>
+          <i class="fas fa-exclamation-circle"></i>
+          <small>Error message</small>
+          <button class="submit-recovery" id="linkPasswordRecovery2">
+            submit
+          </button>
+        </div>
+        <!--  <div class="form-control recovery">
+            
+        </div> -->
+      </div>
+      <!--  password recovery confirmation  -->
+      <div class="form-container hidden-recovery2" id="pw-recovery2">
+        <div class="form-header">
+          <h2>password recovery</h2>
+        </div>
+        <div class="form-control form-text">
+          <p>
+            an email has been sent to your account email adress with the
+            instructions to recover your password
+          </p>
+
+          <button class="submit-recovery" id="backToLogin">
+            back to login
+          </button>
+        </div>
+        <!--  <div class="form-control recovery">
+            
+        </div> -->
+      </div>
+      <!-- </div> -->
+      <!--   create new account -->
+      <div class="form-container hidden-form" id="createAccount">
+        <div class="form-header">
+          <h2>create account</h2>
+        </div>
+        <form id="form" class="form">
+          <div class="form-control">
+            <label for="username">username</label>
+            <input id="username" type="text" placeholder="Enter username" />
+            <i class="fas fa-check-circle"></i>
+            <i class="fas fa-exclamation-circle"></i>
+            <small>Error message</small>
+          </div>
+          <div class="form-control">
+            <label for="email">email</label>
+            <input id="email" type="email" placeholder="Enter email" />
+            <i class="fas fa-check-circle"></i>
+            <i class="fas fa-exclamation-circle"></i>
+            <small>Error message</small>
+          </div>
+          <div class="form-control">
+            <label for="password">password</label>
+            <input id="password" type="password" placeholder="Enter password" />
+            <i class="fas fa-check-circle"></i>
+            <i class="fas fa-exclamation-circle"></i>
+            <small>Error message</small>
+          </div>
+          <div class="form-control">
+            <label for="password2">password check</label>
+            <input
+              id="password2"
+              type="password"
+              placeholder="confirm password"
+            />
+            <i class="fas fa-check-circle"></i>
+            <i class="fas fa-exclamation-circle"></i>
+            <small>Error message</small>
+          </div>
+          <button class="create-btn">submit</button>
+          <p>
+            <a href="#" id="linkLogin"
+              >Already have an account?
+              <span>sign in<i class="fas fa-long-arrow-alt-right"></i> </span
+            ></a>
+          </p>
+        </form>
+      </div>
+    </div>
+  </main>
+
+<footer role="main-footer">
+        <div class="footer-container">
+          <div class="footer-group logo-footer-container">
+               <a href="index.html">
+               <img class="logo-official logo-footer" src="images/Spacex-community-Logo.svg" alt="" />
+              </a> 
+          </div>
+            <div class="footer-group">
+                <ul class="footer-list">                           
+                        <li class="footer-links"><a href="#" target="_blank">privacy policy</li></a>       
+                        <li class="footer-links"><a href="#" target="_blank">cite map</a></li>
+                        <li class="footer-links"><a href="#" target="_blank">contact us </a></li>
+                </ul>
+            </div>
+            <div class="footer-group">
+                <div class="social-media">
+                  <a href="#"><i class="fab fa-facebook"></i></a>
+                  <a href="#"><i class="fab fa-instagram"></i></a>
+                  <a href="#"><i class="fab fa-twitter-square"></i></a>
+                  <a href="#"><i class="fab fa-google-plus-square"></i></a>
+              </div>
+                  <p class="copy">copyright 2020 &copy; Lakhdar Hafsi</p>
+            </div>
+        </div>
+    </footer>
+    <script src="js/index.js"></script>
+    <script src="js/spacex.js"></script>
+  </body>
+</html>
